@@ -59,7 +59,13 @@ def dennis_ritchies_language
         }
      }
 
-		 programmer_hash[:dennis_ritchie][:languages.to_s]
+		 programmer_hash.each do |key, value|
+			 if key == dennis_ritchie && value == "C"
+				 return value
+			 else 
+				 return nil
+			 end
+		 end
 end
 
 def adding_matz
