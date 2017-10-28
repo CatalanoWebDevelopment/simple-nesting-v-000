@@ -62,7 +62,7 @@ def dennis_ritchies_language
 		 programmer_hash.each do |key, value|
 			 if key == dennis_ritchie && value == "C"
 				 return value
-			 else 
+			 else
 				 return nil
 			 end
 		 end
